@@ -50,7 +50,7 @@ nav{
 .left-nav b{
   color: var(--terc);
 }
-.display-flex{
+.display-flex-center{
   display: flex;
   justify-content: center;
 }
@@ -73,4 +73,24 @@ nav{
   cursor: pointer;
   transition: 0.3s;
   color: var(--terc);
+}
+.home{
+  display: flex;
+}
+.left-home{
+  width: 50%;
+}
+.right-home {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.right-home img {
+  height: 20rem;
+  border-radius: 30rem;
+  border: 0.3rem solid var(--terc);
+  box-shadow: 0 0 15px var(--terc);
 }
