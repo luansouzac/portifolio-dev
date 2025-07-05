@@ -24,9 +24,19 @@ nav{
 }
 .left-nav{
   width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+  font-size: 1.5rem;
 }
 .left-nav img{
-  height: 3.5rem;
+  height: 3rem;
+}
+.left-nav h1{
+  font-weight: bold;
+}
+.left-nav b{
+  color: var(--terc);
 }
 .display-flex{
   display: flex;
