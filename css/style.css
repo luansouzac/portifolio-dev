@@ -66,6 +66,10 @@ main section {
   justify-content: center;
 }
 
+.projetos, .contato{
+  display: none;
+}
+
 .right-nav{
   width: 100%;
 }
