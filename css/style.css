@@ -124,3 +124,19 @@ main section {
   border: 0.3rem solid var(--terc);
   box-shadow: 0 0 15px var(--terc);
 }
+.container-projetos{
+  display: flex;
+  gap: 2rem
+}
+.card{
+  color: black;
+}
+.btn.btn-primary {
+  background-color: var(--terc);
+  border-color: var(--terc);
+}
+
+.btn.btn-primary:hover {
+  background-color: #5A1E99;
+  border-color: #5A1E99;
+}
