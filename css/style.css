@@ -1,0 +1,54 @@
+:root{
+    --prim: #1A1A1A ;
+    --sec: #FFFFFF;
+    --terc: #7B2CBF;
+}
+:root.light-mode {
+  --prim: #FFFFFF;
+  --sec: #1A1A1A;
+  --terc: #7B2CBF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-color: var(--prim);
+  color: var(--sec);
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  padding: 0.5rem;
+}
+.left-nav{
+  width: 100%;
+}
+.left-nav img{
+  height: 3.5rem;
+}
+.display-flex{
+  display: flex;
+  justify-content: center;
+}
+.right-nav{
+  width: 100%;
+}
+.right-nav ul{
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+.right-nav li{
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+.right-nav li:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--terc);
+}
