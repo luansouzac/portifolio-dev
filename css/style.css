@@ -8,6 +8,17 @@
   --sec: #1A1A1A;
   --terc: #7B2CBF;
 }
+#scroll-line {
+  position: fixed;
+  left: 50%; 
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 0;
+  background-color: var(--terc); 
+  z-index: 999;
+  transition: height 0.2s ease-out;
+}
 
 * {
     padding: 0;
@@ -18,6 +29,7 @@ body {
   background-color: var(--prim);
   color: var(--sec);
   font-family: 'Poppins', sans-serif;
+  height: 700px;
 }
 nav{
   padding: 0.5rem;
