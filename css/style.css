@@ -197,30 +197,43 @@ main section {
   position: relative; 
   z-index: 100;
 }
+/* projetos */
+.projetos {
+  flex-direction: column;
+}
 
-.container-projetos{
+.container-projetos {
   display: flex;
-  gap: 2rem
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.card{
-  color: black;
+
+.card {
+  color: #000;
+  width: 18rem; 
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.btn.btn-primary {
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
   background-color: var(--terc);
   border-color: var(--terc);
 }
 
-.btn.btn-primary:hover {
-  background-color: #5A1E99;
-  border-color: #5A1E99;
-}
-
+/* contato */
 .container-contato {
-  background-color: var(--terc);
-  padding: 4rem;
+  background-color: rgba(123, 44, 191, 0.1); 
+  border: 1px solid var(--terc);
+  padding: 3rem;
   border-radius: 1rem;
   max-width: 600px;
-  margin: auto;
+  width: 100%;
   font-weight: bold;
 }
 
@@ -230,29 +243,25 @@ form {
   gap: 1rem;
 }
 
-form label {
-  color: var(--sec); /* texto branco */
-}
-
 form input {
   padding: 0.75rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
   outline: none;
-  background-color: var(--sec); /* fundo branco */
-  color: var(--prim); /* texto escuro */
+  transition: border-color 0.3s ease;
 }
 
-form input::placeholder {
-  color: #999;
+form input:focus {
+  border-color: var(--terc);
 }
 
 form button {
   margin-top: 1rem;
   padding: 0.75rem;
-  background-color: var(--prim); 
-  color: var(--sec);            
+  background-color: var(--terc);
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -261,5 +270,5 @@ form button {
 }
 
 form button:hover {
-  background-color: #000;
+  background-color: var(--terc-hover);
 }
