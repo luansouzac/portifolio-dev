@@ -31,3 +31,42 @@ function projetos() {
 function contato() {
   mostrarSecao('contato');
 }
+
+let front = document.getElementById("front");
+let back = document.getElementById("back");
+
+let containerFront = document.getElementById("container-front");
+let containerBack = document.getElementById("container-back");
+
+front.addEventListener("mouseover", function () {
+  containerFront.style.opacity = "1";
+  containerFront.style.visibility = "visible";
+  containerFront.style.transform = "translateY(0)";
+});
+
+front.addEventListener("mouseout", function () {
+  containerFront.style.opacity = "0";
+  containerFront.style.transform = "translateY(10px)";
+
+  setTimeout(() => {
+    containerFront.style.visibility = "hidden";
+  }, 300);
+});
+
+back.addEventListener("mouseover", function () {
+  containerBack.style.opacity = "1";
+  containerBack.style.visibility = "visible";
+  containerBack.style.transform = "translateY(0)";
+});
+
+back.addEventListener("mouseout", function () {
+  containerBack.style.opacity = "0";
+  containerBack.style.transform = "translateY(10px)";
+
+  setTimeout(() => {
+    containerBack.style.visibility = "hidden";
+  }, 300);
+});
+
+
+
